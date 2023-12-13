@@ -1,0 +1,166 @@
+body {
+    background-image: url('../asset/Bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+#ticker-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#ticker-container {
+    width: 65%;
+}
+
+#account-info {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#account-info p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+#news-feed {
+    width: 30%;
+    height: 96vh;
+    overflow-y: scroll;
+    padding: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#trade-form-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 170px;
+}
+
+#trade-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#trade-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#trade-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#trade-form button:hover {
+    background-color: #45a049;
+}
+
+#trade-output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+    overflow: auto;
+}
+
+.ticker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-item {
+    border: 1px solid white;
+    background-color: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-item h3 {
+    cursor: pointer;
+}
+
+.news-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.stock-box {
+    width: 200px;
+    height: 250px;
+    border: 1px solid #fff;
+    margin: 10px;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+.dark-red {
+    color: #880000;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.gray {
+    color: #808080;
+}
+
+.dark-green {
+    color: #008000;
+}
+
+.green {
+    color: #00ff00;
+}
+
+.updated {
+    transition: background-color 1s;
+    background-color: #ffcccc !important;
+}
+
+.red-flash {
+    transition: background-color 1s;
+    background-color: #ffcccc !important;
+}
+
+.green-flash {
+    transition: background-color 1s;
+    background-color: #ccffcc !important;
+}
+
+.gray-flash {
+    transition: background-color 1s;
+    background-color: #ccc !important;
+}
